@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="260dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardMaxElevation="10dp"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iconFavoritos"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="end"
+            android:src="@drawable/favorito"/>
+
+        <ImageView
+            android:id="@+id/imgproducto"
+            android:layout_width="160dp"
+            android:layout_height="110dp"
+            android:elevation="10dp"/>
+
+        <TextView
+            android:id="@+id/contenidoTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
+            android:maxLines="1"
+            android:text="Marian"/>
+
+        <TextView
+            android:id="@+id/contenidoDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins"
+            android:maxLines="1"
+            android:text="Clasico"/>
+
+        <TextView
+            android:id="@+id/contenidoPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
+            android:maxLines="1"
+            android:text="S/ 120"/>
+
+        <ImageView
+            android:id="@+id/iconAgregar"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="end"
+            android:src="@drawable/agregar"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:id="@+id/layoutoferta">
+
+        <ImageView
+            android:id="@+id/imgOfertas"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:src="@drawable/home_photo"/>
+
+        <Button
+            android:id="@+id/btnofertas"
+            android:tag="tag"
+            android:layout_width="125dp"
+            android:background="@drawable/shadow_bottom"
+            android:layout_height="40dp"
+            android:textSize="13dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/black"
+            android:text="Licores"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

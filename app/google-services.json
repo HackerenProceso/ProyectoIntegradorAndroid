@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "36909614668",
+    "project_id": "mitiendita-b03d7",
+    "storage_bucket": "mitiendita-b03d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36909614668:android:7810e6bc724be4a72396e9",
+        "android_client_info": {
+          "package_name": "com.tecsup.mitiendita"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4zdgtuyp2Rsmxz57_2T4sQqrEccHgYS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

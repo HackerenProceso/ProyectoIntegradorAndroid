@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/plomo_fondo"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.HomeActivity">
+
+    <View
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/teal_200"/>
+
+    <LinearLayout
+        android:id="@+id/Busqueda"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/circle_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons8_b_squeda"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/EditBusqueda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="search..."
+            android:padding="10dp"
+            android:textColor="@color/plomo_text"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/publicidad"
+        android:layout_width="350dp"
+        android:layout_height="160dp"
+        android:background="@drawable/shadow_bottom"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Busqueda"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/publicidadtitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poller_one"
+            android:text="Entrega Gratuita!"
+            android:textSize="28dp"
+            android:textColor="@color/primary_200"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/publicidadtexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="para tu primer pedido"
+            android:fontFamily="@font/poller_one"
+            android:textColor="@color/primary_200"
+            android:textSize="17dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/publicidadtitulo"
+            app:layout_constraintStart_toStartOf="@id/publicidadtitulo"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pidelo"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="¡Pídelo ya!"
+            android:autoSizeTextType="none"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/primary_200"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/publicidadtexto"
+            app:layout_constraintStart_toStartOf="@id/publicidadtexto"/>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/logo01"
+            android:layout_marginBottom="-35dp"
+            app:layout_constraintBottom_toBottomOf="@id/pidelo"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/scroll"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/publicidad">
+
+        <LinearLayout
+            android:id="@+id/Botones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btntodo"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="11dp"
+                android:backgroundTint="@color/plomo_text"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"
+                android:text="Todo" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnbebidas"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="11dp"
+                android:backgroundTint="@color/plomo_text"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"
+                android:text="Bebidas" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnhigiene"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="11dp"
+                android:backgroundTint="@color/plomo_text"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"
+                android:text="Higiene P." />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnlimpieza"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="11dp"
+                android:backgroundTint="@color/plomo_text"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"
+                android:text="Limpieza" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnmascotas"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="11dp"
+                android:backgroundTint="@color/plomo_text"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"
+                android:text="Mascotas" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnabarrotes"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="11dp"
+                android:backgroundTint="@color/plomo_text"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"
+                android:text="Abarrotes" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnfrutasv"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="11dp"
+                android:backgroundTint="@color/plomo_text"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"
+                android:text="Frutas y V." />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btncongelados"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="11dp"
+                android:backgroundTint="@color/plomo_text"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"
+                android:text="Congelados" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnquesos"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="11dp"
+                android:backgroundTint="@color/plomo_text"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"
+                android:text="Quesos" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnpan"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="11dp"
+                android:backgroundTint="@color/plomo_text"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"
+                android:text="Panadería" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btncarne"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="11dp"
+                android:backgroundTint="@color/plomo_text"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"
+                android:text="Carne"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnlacteos"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="11dp"
+                android:backgroundTint="@color/plomo_text"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"
+                android:text="Lácteos y H." />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnsaludable"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="11dp"
+                android:backgroundTint="@color/plomo_text"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"
+                android:text="Saludable" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btndesayuno"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="11dp"
+                android:backgroundTint="@color/plomo_text"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"
+                android:text="Desayunos" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnbebe"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="11dp"
+                android:backgroundTint="@color/plomo_text"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"
+                android:text="Bebé" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentScroll"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scroll"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentNav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <!--
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+         Barra de navegación inferior -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

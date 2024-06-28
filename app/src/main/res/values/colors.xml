@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FE0080</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="primary">#FE0080</color>
+    <color name="primary_500">#B2FE0080</color>
+    <color name="primary_200">#FA77B9</color>
+    <color name="plomo_text">#888888</color>
+    <color name="facebook">#1877f2</color>
+    <color name="plomo">#EEEDED</color>
+    <color name="plomo_fondo">#F1F1F1</color>
+    <color name="fondo_nosotros">#FFD9EC</color>
+    <color name="fondo_contacto">#F3F3F3</color>
+    <color name="letra_azul">#5C5ACE</color>
+    <color name="letra_roja">#BA0909</color>
+    <color name="fondo_reclamo">#D9D9D9</color>
+    <color name="rosa_bajo">#FEB8DB</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

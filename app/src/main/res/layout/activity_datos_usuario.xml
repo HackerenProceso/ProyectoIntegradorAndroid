@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".usuario.DatosUsuarioActivity">
+
+    <LinearLayout
+        android:id="@+id/userInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/shadow_bottom"
+        android:padding="1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DATOS PERSONALES"
+            android:textSize="20dp"
+            android:textColor="@color/primary_200"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Nombre"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mónica"
+            android:textColor="@color/plomo_text"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <View
+            android:layout_width="330dp"
+            android:layout_height="0.7dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/plomo_text" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Nombre de usuario"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_marginTop="08dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Romero Zavaleta"
+            android:textColor="@color/plomo_text"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <View
+            android:layout_width="330dp"
+            android:layout_height="0.7dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/plomo_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Correo electronico"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_marginTop="08dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="example@gmail.com"
+            android:textColor="@color/plomo_text"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <View
+            android:layout_width="330dp"
+            android:layout_height="0.7dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/plomo_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Numero de telefono"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:layout_marginTop="08dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="96585693"
+            android:textColor="@color/plomo_text"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnRegresarD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:paddingHorizontal="52dp"
+        android:paddingVertical="13dp"
+        app:layout_constraintBottom_toTopOf="@id/fragmentNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentNav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

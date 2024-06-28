@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always"
+        android:title=""
+        android:icon="@drawable/menu_icon">
+
+        <menu>
+            <item
+                android:id="@+id/itemInicio"
+                android:visible="true"
+                android:title="Inicio" />
+            <item
+                android:id="@+id/itemNosotros"
+                android:visible="true"
+                android:title="Sobre Nosotros" />
+            <item
+                android:id="@+id/itemOfertas"
+                android:visible="true"
+                android:title="Ofertas y Cupones" />
+            <item
+                android:id="@+id/itemUbicacion"
+                android:visible="true"
+                android:title="Ubicacion" />
+            <item
+                android:id="@+id/itemContacto"
+                android:visible="true"
+                android:title="Contacto" />
+            <item
+                android:id="@+id/itemReclamo"
+                android:visible="true"
+                android:title="Reclamos" />
+            <item
+                android:id="@+id/itemTerminos"
+                android:visible="true"
+                android:title="Terminos y Condiciones" />
+            <item
+                android:id="@+id/itemExperiencia"
+                android:visible="true"
+                android:title="Evalua tu Experiencia" />
+        </menu>
+    </item>
+
+</menu>

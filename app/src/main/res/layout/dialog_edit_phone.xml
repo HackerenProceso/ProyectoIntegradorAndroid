@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".access.RegisterActivity"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/edit_text_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearPrincipal">
+
+        <!-- Imagen y Texto "Editar celular" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:src="@drawable/lapiz"
+                android:contentDescription="Imagen" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar celular"
+                android:textSize="26sp"
+                android:textColor="@color/plomo_text"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Texto "Para editar..." -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Para editar tu número de celular  necesitamos validar tu identidad. Al continuar,  enviaremos un cadigo verificador al correo
+                mo *** @gmailcom."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp" />
+
+        <!-- Texto "Celular" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celular"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <!-- Número de Celular -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="345689"
+            android:textSize="16sp"
+            android:textColor="@color/plomo_text"
+            android:layout_marginTop="5dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_marginVertical="14dp" />
+
+        <!-- Botón "Guardar" -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGuardar"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#54F378B6"
+            android:fontFamily="@font/alef_bold"
+            android:text="Guardar"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Botón "Cancelar" -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bntCancelar"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/alef_bold"
+            android:text="Cancelar"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
